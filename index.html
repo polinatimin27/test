@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самый бесполезный тест в мире</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <section id="start">
+
+        <span class="subtitle">ЭКСПЕРИМЕНТ №001</span>
+
+        <h1>Самый бесполезный<br>тест в мире</h1>
+
+        <p>11 вопросов. Никакой пользы. Возможно, немного смысла.</p>
+
+        <input type="text" id="name"
+               placeholder="Твоё имя (необязательно)">
+
+        <button onclick="startTest()">Начать тест →</button>
+
+    </section>
+
+    <section id="test" hidden>
+
+        <div id="progressText" class="progress-info"></div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="answers"></div>
+
+        <p id="errorMessage"></p>
+
+        <button id="nextButton" onclick="nextQuestion()">
+            Далее →
+        </button>
+
+    </section>
+
+    <section id="reactionScreen" hidden>
+
+        <h2 id="reactionMessage"></h2>
+
+        <button onclick="continueTest()">
+            Продолжить →
+        </button>
+
+    </section>
+
+    <section id="result" hidden>
+
+        <span class="subtitle">ЭКСПЕРИМЕНТ ЗАВЕРШЁН</span>
+
+        <h1>Поздравляем!</h1>
+
+        <p>
+            Ты ответил/а на 11 вопросов,
+            которые никак не изменят твою жизнь.
+        </p>
+
+        <div class="statistics">
+
+            <p>Научная ценность: сомнительная.</p>
+
+            <p>Потраченное время: уже не вернуть.</p>
+
+            <p>Вклад в развитие человечества: неизвестен.</p>
+
+        </div>
+
+        <p>Спасибо за участие ❤️</p>
+
+        <p id="sendStatus"></p>
+
+    </section>
+
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
